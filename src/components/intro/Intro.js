@@ -26,7 +26,7 @@ export default function Intro() {
                 <div className='wrapper'>
                     <h2>Hi There! I'm</h2>
                     <h1>Khalid Arsa</h1>
-                    <h3>Web <span ref={textRef}></span></h3>
+                    <h3>Full-stack <span ref={textRef}></span></h3>
                     <Button variant="contained">Download CV</Button>
                 </div>
                 <a href='#about'>

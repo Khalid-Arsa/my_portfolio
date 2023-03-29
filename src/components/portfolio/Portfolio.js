@@ -2,11 +2,8 @@ import React, { useEffect, useState } from 'react'
 import PortfolioList from '../portfolioList/PortfolioList'
 import './portfolio.scss'
 import {
-    featuredPortfolio,
     webPortfolio,
     mobilePortfolio,
-    designPortfolio,
-    contentPortfolio
 } from '../../data'
 
 export default function Portfolio() {
@@ -16,10 +13,6 @@ export default function Portfolio() {
 
     const list = [
         {
-            id: 'featured',
-            title: 'Feature'
-        },
-        {
             id: 'web',
             title: 'Web App'
         },
@@ -27,37 +20,19 @@ export default function Portfolio() {
             id: 'mobile',
             title: 'Mobile App'
         },
-        {
-            id: 'design',
-            title: 'Design'
-        },
-        {
-            id: 'content',
-            title: 'Content'
-        }
     ]
 
     useEffect(() => {
 
         switch (selected) {
-            case 'featured':
-                setData(featuredPortfolio)
-                break;
             case 'web':
                 setData(webPortfolio)
                 break;
             case 'mobile':
                 setData(mobilePortfolio)
                 break;
-            case 'design':
-                setData(designPortfolio)
-                break;
-            case 'content':
-                setData(contentPortfolio)
-                break;
-
             default:
-                setData(featuredPortfolio);
+                setData(webPortfolio);
         }
 
     }, [selected])

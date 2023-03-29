@@ -16,7 +16,7 @@ export default function About() {
             <div className='right'>
                 <h1>About Me</h1>
                 <hr/>
-                <h3>I'm Khalid Arsa. I am a Full-stack web developer 
+                <h3>I'm Khalid Arsa. I am a Full-stack web/mobile developer 
                     and highly enthusiastic 
                     about my work and committed to it.
                     I have obtained the knowledge, skills,
