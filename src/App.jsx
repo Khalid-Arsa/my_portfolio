@@ -2,11 +2,8 @@ import { useState } from "react";
 import Contact from "./components/contact/Contact";
 import Intro from "./components/intro/Intro";
 import Portfolio from "./components/portfolio/Portfolio";
-import Testimonial from "./components/testimonial/Testimonial";
 import Topbar from "./components/topbar/Topbar";
-import Works from "./components/works/Works.jsx";
 import About from "./components/about/About";
-import './app.scss'
 import Menu from "./components/menu/Menu";
 
 function App() {
@@ -20,8 +17,6 @@ function App() {
         <Intro/>
         <About/>
         <Portfolio/>
-        {/* <Works/> */}
-        {/* <Testimonial/> */}
         <Contact/>
       </div>
     </div>

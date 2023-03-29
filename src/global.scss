@@ -5,7 +5,7 @@ $width: 860px;
 $flat: 1080px;
 
 @mixin mobile {
-    @media (max-width: #{$width}){
-        @content
-    }
+  @media (max-width: #{$width}) {
+    @content
+  }
 }
