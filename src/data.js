@@ -3,7 +3,6 @@ import FITAZFK_IMG from "./asset/img/fitazfk_admin.png"
 import GIVENGET_IMG from "./asset/img/givenget_admin.png"
 import FITAZFK_MOBILE_IMG from "./asset/img/fitazfk_mobile.jpg"
 
-
 export const webPortfolio = [
   {
     id: 1,
