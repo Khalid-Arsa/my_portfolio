@@ -4,9 +4,8 @@ import Intro from "./components/intro/Intro";
 import Portfolio from "./components/portfolio/Portfolio";
 import Testimonial from "./components/testimonial/Testimonial";
 import Topbar from "./components/topbar/Topbar";
-import Works from "./components/works/Works";
+import Works from "./components/works/Works.jsx";
 import About from "./components/about/About";
-
 import './app.scss'
 import Menu from "./components/menu/Menu";
 
