@@ -18,8 +18,9 @@ export default function Intro() {
   return (
     <div className='intro' id='intro'>
       <div className='left'>
-        <div className='imgContainer'></div>
-        <img src='assets/khalid.png' alt='' />
+        <div className='imgContainer'>
+            <img src='assets/khalid.png' alt='' />
+        </div>
       </div>
       <div className='right'>
         <div className='wrapper'>
