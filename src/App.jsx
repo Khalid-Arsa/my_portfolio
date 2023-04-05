@@ -5,6 +5,7 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Topbar from "./components/topbar/Topbar";
 import About from "./components/about/About";
 import Menu from "./components/menu/Menu";
+import Works from "./components/works/Works";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -17,6 +18,7 @@ function App() {
         <Intro/>
         <About/>
         <Portfolio/>
+        <Works/>
         <Contact/>
       </div>
     </div>
