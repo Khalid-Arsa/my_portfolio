@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import './works.scss'
-import CAPLAN_IMG from "../../asset/img/caplan_plan.png"
 import { data } from '../../data'
 
 export default function Works() {
@@ -15,7 +14,7 @@ export default function Works() {
 
   return (
     <div className='works' id='works'>
-      <h1>Project</h1>
+      <h1>My Project</h1>
       <div
         className='slider'
         style={{ transform: `translateX(-${currentSlider * 100}vw)` }}
@@ -25,9 +24,6 @@ export default function Works() {
             <div className='item'>
               <div className='left'>
                 <div className='leftContainer'>
-                  <div className='imgContainer'>
-                    <img src={d.icon} alt='' />
-                  </div>
                   <h2>{d.title}</h2>
                   <p>
                     {d.desc}
