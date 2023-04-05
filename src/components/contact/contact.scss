@@ -29,6 +29,7 @@
       }
     }
   }
+
   .right {
     flex: 1;
     display: flex;
@@ -52,9 +53,9 @@
       align-items: center;
       justify-content: space-around;
 
-    //   @include mobile {
-    //     margin-left: 100px;
-    //   }
+      //   @include mobile {
+      //     margin-left: 100px;
+      //   }
 
       input {
         width: 300px;

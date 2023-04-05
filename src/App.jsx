@@ -2,12 +2,10 @@ import { useState } from "react";
 import Contact from "./components/contact/Contact";
 import Intro from "./components/intro/Intro";
 import Portfolio from "./components/portfolio/Portfolio";
-import Testimonial from "./components/testimonial/Testimonial";
 import Topbar from "./components/topbar/Topbar";
-import Works from "./components/works/Works.jsx";
 import About from "./components/about/About";
-import './app.scss'
 import Menu from "./components/menu/Menu";
+import Works from "./components/works/Works";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -20,8 +18,7 @@ function App() {
         <Intro/>
         <About/>
         <Portfolio/>
-        {/* <Works/> */}
-        {/* <Testimonial/> */}
+        <Works/>
         <Contact/>
       </div>
     </div>

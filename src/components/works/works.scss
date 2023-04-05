@@ -1,11 +1,23 @@
 @import "../../global.scss";
 
 .works {
-  background-color: crimson;
+  background-color: $mainColor;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+
+  h1 {
+    position: absolute;
+    top: 20px;
+    font-size: 50px;
+    color: white;
+
+    @include mobile {
+      font-size: 40px;
+      top: 30px;
+    }
+  }
 
   .arrow {
     height: 50px;
@@ -27,12 +39,13 @@
   }
 
   .slider {
-    height: 350px;
+    height: 450px;
     display: flex;
     position: absolute;
     left: 0;
     transition: all 1s ease-out;
-
+    top: 120px;
+    
     @include mobile {
       height: 100vh;
       flex-direction: column;
@@ -46,7 +59,7 @@
       justify-content: center;
 
       .item {
-        width: 700px;
+        width: 70%;
         height: 100%;
         background-color: white;
         border-radius: 20px;
