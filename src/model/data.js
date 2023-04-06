@@ -1,7 +1,7 @@
-import CAPLAN_IMG from "./asset/img/caplan_plan.png"
-import FITAZFK_IMG from "./asset/img/fitazfk_admin.png"
-import GIVENGET_IMG from "./asset/img/givenget_admin.png"
-import FITAZFK_MOBILE_IMG from "./asset/img/fitazfk_mobile.jpg"
+import CAPLAN_IMG from "../asset/img/caplan_plan.png"
+import FITAZFK_IMG from "../asset/img/fitazfk_admin.png"
+import GIVENGET_IMG from "../asset/img/givenget_admin.png"
+import FITAZFK_MOBILE_IMG from "../asset/img/fitazfk_mobile.jpg"
 
 export const data = [
   {
@@ -11,6 +11,7 @@ export const data = [
     desc:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
     img: CAPLAN_IMG,
+    stack: ["ReactJs | ", "ExpressJs | ", "Mysql | ", "EC2/AWS"]
   },
   {
     id: 2,
