@@ -101,12 +101,19 @@
                 display: none;
               }
             }
-            
-            span {
-              font-size: 14px;
+
+            .projectButton {
+              font-size: 20px;
               font-weight: 600;
-              text-decoration: underline;
-              cursor: pointer;
+              margin-top: 20px;
+            }
+
+            span {
+              font-size: 15px;
+              border-top-style: solid;
+              border-top-width: 1px;
+              margin-top: 2px;
+              padding-top: 12px;
             }
           }
         }

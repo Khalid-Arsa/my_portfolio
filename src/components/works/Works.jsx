@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './works.scss'
-import { data } from '../../data'
+import { data } from '../../model/data'
 
 export default function Works() {
 
@@ -10,6 +10,10 @@ export default function Works() {
     way === 'left'
       ? setCurrentSlider(currentSlider > 0 ? currentSlider - 1 : 2)
       : setCurrentSlider(currentSlider < data.length - 1 ? currentSlider + 1 : 0)
+  }
+
+  const optimizeArrayString = (stack) => {
+    console.log(stack)
   }
 
   return (
@@ -28,7 +32,8 @@ export default function Works() {
                   <p>
                     {d.desc}
                   </p>
-                  <span>Projects</span>
+                  <h2 className='projectButton'>Visit Site</h2>
+                  <span>{d.stack}</span>
                 </div>
               </div>
               <div className='right'>
