@@ -28,7 +28,10 @@ export default function Works() {
                   <p>
                     {d.desc}
                   </p>
-                  <h2 className='projectButton'>Visit Site</h2>
+                  <div className='link'>
+                    <h2 className='projectButton'>Demo</h2>
+                    <h2 className='projectButton'>Github</h2>
+                  </div>
                   <span>{d.stack}</span>
                 </div>
               </div>
