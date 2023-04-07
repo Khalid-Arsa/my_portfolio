@@ -12,10 +12,6 @@ export default function Works() {
       : setCurrentSlider(currentSlider < data.length - 1 ? currentSlider + 1 : 0)
   }
 
-  const optimizeArrayString = (stack) => {
-    console.log(stack)
-  }
-
   return (
     <div className='works' id='works'>
       <h1>My Project</h1>

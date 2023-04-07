@@ -20,6 +20,7 @@ export const data = [
     desc:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
     img: FITAZFK_IMG,
+    stack: ["ReactJs | ", "Firebase | ", "GCE/GCP"]
   },
   {
     id: 3,
@@ -28,6 +29,7 @@ export const data = [
     desc:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
     img: GIVENGET_IMG,
+    stack: ["NestJs | ", "Mysql | ", "EC2/AWS"]
   },
 ];
 
