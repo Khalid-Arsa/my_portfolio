@@ -11,7 +11,11 @@ export const data = [
     desc:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
     img: CAPLAN_IMG,
-    stack: ["ReactJs | ", "ExpressJs | ", "Mysql | ", "EC2/AWS"]
+    stack: ["ReactJs | ", "ExpressJs | ", "Mysql | ", "EC2/AWS"],
+    link: [{
+      github: null,
+      site: null
+    }]
   },
   {
     id: 2,
@@ -20,7 +24,11 @@ export const data = [
     desc:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
     img: FITAZFK_IMG,
-    stack: ["ReactJs | ", "Firebase | ", "GCE/GCP"]
+    stack: ["ReactJs | ", "Firebase | ", "GCE/GCP"],
+    link: [{
+      github: null,
+      site: null
+    }]
   },
   {
     id: 3,
@@ -29,7 +37,11 @@ export const data = [
     desc:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
     img: GIVENGET_IMG,
-    stack: ["NestJs | ", "Mysql | ", "EC2/AWS"]
+    stack: ["NestJs | ", "Mysql | ", "EC2/AWS"],
+    link: [{
+      github: null,
+      site: null
+    }]
   },
 ];
 
