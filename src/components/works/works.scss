@@ -57,6 +57,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
+      @include mobile {
+        overflow: hidden;
+        margin-top: 20px;
+      }
       
       .item {
         width: 85%;
@@ -124,15 +129,13 @@
         }
         .right {
           flex: 4;
-          height: 100%;
+          height: 70%;
           display: flex;
-          align-items: center;
+          padding: 10px;
           justify-content: center;
           overflow: hidden;
-
-          img {
-            width: 90%;
-          }
+          background-size: contain;
+          background-position: center;
         }
       }
     }
