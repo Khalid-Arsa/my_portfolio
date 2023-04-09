@@ -43,6 +43,19 @@ export const data = [
       site: null
     }]
   },
+  {
+    id: 4,
+    icon: "./assets/writing.png",
+    title: "Give and Get",
+    desc:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    img: FITAZFK_MOBILE_IMG,
+    stack: ["NestJs | ", "Mysql | ", "EC2/AWS"],
+    link: [{
+      github: null,
+      site: null
+    }]
+  },
 ];
 
 export const mobilePortfolio = [
