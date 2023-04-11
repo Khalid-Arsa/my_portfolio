@@ -47,7 +47,7 @@
     top: 120px;
     
     @include mobile {
-      height: 100vh;
+      height: auto;
       flex-direction: column;
       justify-content: center;
     }
@@ -60,7 +60,10 @@
 
       @include mobile {
         overflow: hidden;
-        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
       }
       
       .item {
@@ -73,17 +76,34 @@
         justify-content: center;
 
         @include mobile {
-          width: 80%;
-          height: 150px;
-          margin: 15px 0;
+          width: 90%;
+          height: 40%;
+          border-radius: 6px;
+          background-color: white;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          overflow: hidden;
+          padding: 4px;
         }
 
         .left {
           flex: 4;
-          height: 80%;
+          height: 100%;
           display: flex;
           align-items: center;
           justify-content: center;
+
+          @include mobile {
+            flex: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 14px;
+          }
 
           .leftContainer {
             width: 90%;
@@ -91,19 +111,25 @@
             display: flex;
             flex-direction: column;
             gap: 12px;
+
+            @include mobile {
+              display: flex;
+              flex-direction: column;
+              overflow: hidden;
+            }
             
             h2 {
               font-size: 35px;
 
               @include mobile{
-                font-size: 13px;
+                font-size: 26px;
               }
             }
             p {
               font-size: 18px;
 
               @include mobile{
-                display: none;
+                font-size: 16px;
               }
             }
 
@@ -116,14 +142,24 @@
               font-size: 20px;
               font-weight: 600;
               margin-top: 20px;
+              color: $mainColor;
+
+              @include mobile {
+                color: $mainColor;
+              }
             }
 
             span {
-              font-size: 15px;
+              font-size: 12px;
               border-top-style: solid;
               border-top-width: 1px;
               margin-top: 2px;
               padding-top: 12px;
+              color: $mainColor;
+
+              @include mobile {
+                color: $mainColor;
+              }
             }
           }
         }
@@ -136,6 +172,16 @@
           overflow: hidden;
           background-size: contain;
           background-position: center;
+
+          @include mobile {
+            flex: none;
+            display: flex;
+            justify-content: center;
+            background-size: contain;
+            background-position: center;
+            width: 100%;
+            overflow: hidden;
+          }
         }
       }
     }
