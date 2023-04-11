@@ -22,6 +22,9 @@ export default function Works() {
         {data.map((d) => (
           <div key={d.id} className='container'>
             <div className='item'>
+              <div className='right'>
+                <img src={d.img} alt='' />
+              </div>
               <div className='left'>
                 <div className='leftContainer'>
                   <h2>{d.title}</h2>
@@ -34,9 +37,6 @@ export default function Works() {
                   </div>
                   <span>{d.stack}</span>
                 </div>
-              </div>
-              <div className='right'>
-                <img src={d.img} alt='' />
               </div>
             </div>
           </div>
