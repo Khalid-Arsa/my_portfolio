@@ -24,14 +24,17 @@
       float: right;
 
       @include mobile{
-        align-items: flex-start;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 50%;
       }
 
       img {
-        height: 90%;
+        height: 100%;
 
         @include mobile{
-          height: 45%;
+          height: auto;
         }
       }
     }
