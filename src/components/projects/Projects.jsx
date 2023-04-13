@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './works.scss'
+import './projects.scss'
 import { data } from '../../model/data'
 
 export default function Works() {
@@ -13,7 +13,7 @@ export default function Works() {
   }
 
   return (
-    <div className='works' id='works'>
+    <div className='works' id='projects'>
       <h1>My Project</h1>
       <div
         className='slider'

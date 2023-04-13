@@ -19,10 +19,8 @@
     position: relative;
 
     @include mobile {
-      flex: 0.5px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      width: 100%;
+      padding: 80px;
     }
 
     .card {
@@ -33,8 +31,8 @@
       background-color: $mainColor;
       
       @include mobile {
-        width: 140px;
-        height: 180px;
+        width: 180px;
+        height: 250px;
       }
     }
 
@@ -49,8 +47,8 @@
 
       @include mobile {
         margin: 20px 30px;
-        width: 140px;
-        height: 180px;
+        width: 180px;
+        height: 250px;
       }
 
       img {
@@ -68,11 +66,8 @@
     padding: 20px;
 
     @include mobile {
-      padding-bottom: 50px;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
     }
 
     h1 {
@@ -81,8 +76,8 @@
 
       @include mobile {
         margin-bottom: 20px;
-        font-size: 40px;
-        font-weight: 500;
+        font-size: 46px;
+        font-weight: 550;
         overflow: hidden;
       }
     }
@@ -116,9 +111,8 @@
       color: rgb(131, 122, 122);
 
       @include mobile {
-        margin-top: 20px;
-        margin: 0px 20px;
-        font-size: 15px;
+        margin: 0px 6px;
+        font-size: 16px;
         text-align: center;
         line-height: 1.6;
         overflow: hidden;
