@@ -11,15 +11,16 @@
   .left {
     flex: 1;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     @include mobile {
       flex: 0.5;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
 
     img {
+      width: auto;
       height: 100%;
     }
 
@@ -47,7 +48,7 @@
     }
 
     form {
-      width: 70%;
+      width: auto;
       height: 70%;
       display: flex;
       flex-direction: column;
@@ -81,7 +82,7 @@
         width: 150px;
         height: 30px;
         color: white;
-        background-color: crimson;
+        background-color: $mainColor;
         border: none;
         border-radius: 10px;
         font-weight: 500;
