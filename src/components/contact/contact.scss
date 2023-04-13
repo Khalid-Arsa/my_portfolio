@@ -38,10 +38,11 @@
     justify-content: center;
 
     h2 {
-      font-size: 30px;
+      font-size: 40px;
 
       @include mobile {
         margin-bottom: 10px;
+        font-size: 35px;
       }
     }
 
@@ -53,14 +54,10 @@
       align-items: center;
       justify-content: space-around;
 
-      //   @include mobile {
-      //     margin-left: 100px;
-      //   }
-
       input {
         width: 300px;
         height: 30px;
-        font-size: 14px;
+        font-size: 15px;
 
         @include mobile {
           width: 200px;
@@ -72,7 +69,7 @@
       textarea {
         width: 300px;
         height: 200px;
-        font-size: 14px;
+        font-size: 15px;
 
         @include mobile {
           width: 200px;
