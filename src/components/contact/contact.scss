@@ -35,66 +35,102 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 
-    h2 {
-      font-size: 40px;
-
-      @include mobile {
-        margin-bottom: 10px;
-        font-size: 35px;
-      }
-    }
-
-    form {
-      width: auto;
-      height: 70%;
+    .form-container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-around;
+      justify-content: center;
+      height: auto;
 
-      input {
-        width: 300px;
-        height: 30px;
-        font-size: 15px;
+      @include mobile {
+        height: auto;
+        padding: 20px;
+      }
+
+      h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
 
         @include mobile {
-          width: 200px;
-          height: 20px;
-          margin-bottom: 10px;
+          margin-bottom: 20px;
+          font-size: 35px;
         }
       }
 
-      textarea {
-        width: 300px;
-        height: 200px;
-        font-size: 15px;
+      form {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
 
         @include mobile {
-          width: 200px;
-          height: 100px;
+          gap: 3px;
+        }
+
+        input {
+          width: 300px;
+          height: 30px;
+          font-size: 15px;
+
+          @include mobile {
+            width: 300px;
+            height: 20px;
+            margin-bottom: 10px;
+          }
+        }
+
+        textarea {
+          width: 300px;
+          height: 200px;
+          font-size: 15px;
+          resize: vertical;
+
+          @include mobile {
+            width: 300px;
+            height: 100px;
+          }
+        }
+
+        button {
+          width: 150px;
+          height: 30px;
+          color: white;
+          background-color: $mainColor;
+          border: none;
+          border-radius: 10px;
+          margin-top: 10px;
+          cursor: pointer;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        span {
+          color: $mainColor;
+          margin-top: 10px;
         }
       }
+    }
 
-      button {
-        width: 150px;
-        height: 30px;
-        color: white;
-        background-color: $mainColor;
-        border: none;
-        border-radius: 10px;
-        font-weight: 500;
-        cursor: pointer;
+    .icon-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      gap: 10px;
 
-        &:focus {
-          outline: none;
+      .icon {
+        font-size: 30px;
+        color: black;
+
+        @include mobile {
+          font-size: 28px;
         }
-      }
-
-      span {
-        color: $mainColor;
       }
     }
   }
