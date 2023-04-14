@@ -52,7 +52,6 @@
       flex-direction: column;
 
       @include mobile{
-        padding-left: 0;
         align-items: center;
       }
 
@@ -93,7 +92,7 @@
         }
       }
       
-      button {
+      .downloadButton {
         margin-top: 20px;
         width: 120px;
         background-color: $mainColor;
@@ -105,10 +104,15 @@
         }
       }
     }
-    a {
+    .downButton {
       position: absolute;
-      bottom: 10px;
+      bottom: 40px;
       left: 40%;
+
+      @include mobile {
+        bottom: 10px;
+
+      }
 
       img {
         width: 30px;
