@@ -4,7 +4,7 @@
   background-color: white;
   display: flex;
 
-  @include mobile {
+  @include responsive($lg) {
     flex-direction: column;
     align-items: center;
   }
@@ -18,7 +18,7 @@
     overflow: hidden;
     position: relative;
 
-    @include mobile {
+    @include responsive($lg) {
       width: 100%;
       padding: 80px;
     }
@@ -30,7 +30,7 @@
       height: 350px;
       background-color: $mainColor;
       
-      @include mobile {
+      @include responsive($lg) {
         width: 180px;
         height: 250px;
       }
@@ -45,7 +45,7 @@
       background-color: #333;
       overflow: hidden;
 
-      @include mobile {
+      @include responsive($lg) {
         margin: 20px 30px;
         width: 180px;
         height: 250px;
@@ -65,7 +65,7 @@
     justify-content: center;
     padding: 20px;
 
-    @include mobile {
+    @include responsive($lg) {
       display: flex;
       flex-direction: column;
     }
@@ -74,7 +74,7 @@
       font-size: 100px;
       font-weight: 600;
 
-      @include mobile {
+      @include responsive($lg) {
         margin-bottom: 20px;
         font-size: 46px;
         font-weight: 550;
@@ -90,7 +90,7 @@
       transition: width 1s ease-out;
       float: top;
 
-      @include mobile {
+      @include responsive($lg) {
         display: none;
       }
     }
@@ -110,7 +110,7 @@
       font-size: 25px;
       color: rgb(131, 122, 122);
 
-      @include mobile {
+      @include responsive($lg) {
         margin: 0px 6px;
         font-size: 16px;
         text-align: center;

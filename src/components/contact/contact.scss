@@ -4,7 +4,7 @@
   background-color: white;
   display: flex;
 
-  @include mobile {
+  @include responsive($lg) {
     flex-direction: column;
   }
 
@@ -15,7 +15,7 @@
     align-items: center;
     justify-content: center;
 
-    @include mobile {
+    @include responsive($lg) {
       flex: 0.5;
     }
 
@@ -24,7 +24,7 @@
       height: 100%;
     }
 
-    @include mobile {
+    @include responsive($lg) {
       img {
         height: 90%;
       }
@@ -44,7 +44,7 @@
       justify-content: center;
       height: auto;
 
-      @include mobile {
+      @include responsive($lg) {
         height: auto;
         padding: 20px;
       }
@@ -53,7 +53,7 @@
         font-size: 40px;
         margin-bottom: 20px;
 
-        @include mobile {
+        @include responsive($lg) {
           margin-bottom: 20px;
           font-size: 35px;
         }
@@ -67,7 +67,7 @@
         justify-content: center;
         gap: 10px;
 
-        @include mobile {
+        @include responsive($lg) {
           gap: 3px;
         }
 
@@ -76,7 +76,7 @@
           height: 30px;
           font-size: 15px;
 
-          @include mobile {
+          @include responsive($lg) {
             width: 300px;
             height: 20px;
             margin-bottom: 10px;
@@ -89,7 +89,7 @@
           font-size: 15px;
           resize: vertical;
 
-          @include mobile {
+          @include responsive($lg) {
             width: 300px;
             height: 100px;
           }
@@ -128,7 +128,7 @@
         font-size: 30px;
         color: black;
 
-        @include mobile {
+        @include responsive($lg) {
           font-size: 28px;
         }
       }

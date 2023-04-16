@@ -5,7 +5,7 @@
   display: flex;
   padding: 20px;
 
-  @include mobile{
+  @include responsive($lg){
     flex-direction: column;
     align-items: center;
     padding: 0px;
@@ -18,7 +18,7 @@
     align-items: center;
     justify-content: center;
 
-    @include mobile {
+    @include responsive($lg) {
       padding: 40px;
       width: 100%;
     }
@@ -29,7 +29,7 @@
       justify-content: center;
       height: auto;
 
-      @include mobile{
+      @include responsive($lg){
         overflow: hidden;
       }
 
@@ -40,7 +40,7 @@
         object-fit: cover;
         object-position: center;
 
-        @include mobile {
+        @include responsive($lg) {
           width: 290px;
           height: 290px;
         }
@@ -54,7 +54,7 @@
     align-items: center;
     padding-left: 20px;
 
-    @include mobile {
+    @include responsive($lg) {
       padding-left: 0px;
     }
 
@@ -62,7 +62,7 @@
       display: flex;
       flex-direction: column;
 
-      @include mobile{
+      @include responsive($lg){
         align-items: center;
       }
 
@@ -70,7 +70,7 @@
         font-size: 60px;
         margin: 10px 0;
 
-        @include mobile{
+        @include responsive($lg){
           font-size: 40px;
         }
       }
@@ -80,7 +80,7 @@
       h3 {
         font-size: 30px;
 
-        @include mobile{
+        @include responsive($lg){
           font-size: 20px;
         }
 
@@ -110,7 +110,7 @@
         color: white;
         cursor: pointer;
 
-        @include mobile {
+        @include responsive($lg) {
           margin-bottom: 20px;
         }
       }
@@ -120,7 +120,7 @@
       bottom: 40px;
       left: 40%;
 
-      @include mobile {
+      @include responsive($lg) {
         bottom: 10px;
 
       }
