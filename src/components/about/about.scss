@@ -10,7 +10,7 @@
   }
 
   .left {
-    flex: 0.5;
+    flex: 0.4;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,6 +20,10 @@
 
     @include responsive($lg) {
       width: 100%;
+      padding: 110px;
+    }
+
+    @include responsive($xs) {
       padding: 80px;
     }
 
@@ -33,6 +37,17 @@
       @include responsive($lg) {
         width: 180px;
         height: 250px;
+      }
+
+      @include responsive($med) {
+        width: 160px;
+        height: 230px;
+      }
+
+      @include responsive($xs) {
+        margin-left: 40px;
+        width: 130px;
+        height: 200px;
       }
     }
 
@@ -51,6 +66,18 @@
         height: 250px;
       }
 
+      @include responsive($med) {
+        margin: 20px 30px;
+        width: 160px;
+        height: 230px;
+      }
+
+      @include responsive($xs) {
+        margin: 20px 30px;
+        width: 130px;
+        height: 200px;
+      }
+
       img {
         width: 100%;
         height: 100%;
@@ -67,6 +94,7 @@
 
     @include responsive($lg) {
       display: flex;
+      padding: 10px;
       flex-direction: column;
     }
 
@@ -75,10 +103,23 @@
       font-weight: 600;
 
       @include responsive($lg) {
-        margin-bottom: 20px;
-        font-size: 46px;
+        margin-bottom: 10px;
+        font-size: 45px;
         font-weight: 550;
         overflow: hidden;
+      }
+
+      @include responsive($med) {
+        margin-bottom: 10px;
+        font-size: 36px;
+        font-weight: 550;
+        overflow: hidden;
+      }
+
+      @include responsive($xs) {
+        margin-bottom: 10px;
+        font-size: 30px;
+        font-weight: 550;
       }
     }
 
@@ -112,7 +153,22 @@
 
       @include responsive($lg) {
         margin: 0px 6px;
-        font-size: 16px;
+        font-size: 18px;
+        text-align: center;
+        line-height: 1.6;
+        overflow: hidden;
+      }
+
+      @include responsive($med) {
+        margin: 0px 6px;
+        font-size: 14px;
+        text-align: center;
+        line-height: 1.6;
+        overflow: hidden;
+      }
+
+      @include responsive($xs) {
+        font-size: 13px;
         text-align: center;
         line-height: 1.6;
         overflow: hidden;
