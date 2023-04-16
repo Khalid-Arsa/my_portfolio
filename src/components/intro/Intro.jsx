@@ -37,9 +37,6 @@ export default function Intro() {
             Download CV
           </Button>
         </div>
-        <a className='downButton' href='#about'>
-          <img src='assets/down.png' alt='' />
-        </a>
       </div>
     </div>
   )

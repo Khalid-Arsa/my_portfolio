@@ -19,7 +19,7 @@
     justify-content: center;
 
     @include responsive($lg) {
-      padding: 40px;
+      padding: 50px;
       width: 100%;
     }
     
@@ -44,6 +44,11 @@
           width: 290px;
           height: 290px;
         }
+
+        @include responsive($xs) {
+          width: 250px;
+          height: 250px;
+        }
       }
     }
   }
@@ -55,7 +60,11 @@
     padding-left: 20px;
 
     @include responsive($lg) {
-      padding-left: 0px;
+      padding: 20px;
+      width: 100%;
+      height: auto;
+      align-items: center;
+      justify-content: center;
     }
 
     .wrapper {
@@ -63,6 +72,7 @@
       flex-direction: column;
 
       @include responsive($lg){
+        padding: 20px;
         align-items: center;
       }
 
@@ -73,15 +83,29 @@
         @include responsive($lg){
           font-size: 40px;
         }
+
+        @include responsive($xs){
+          font-size: 25px;
+        }
       }
+
       h2 {
         font-size: 35px;
+
+        @include responsive($xs){
+          font-size: 20px;
+        }
       }
+
       h3 {
         font-size: 30px;
 
         @include responsive($lg){
           font-size: 20px;
+        }
+
+        @include responsive($xs){
+          font-size: 15px;
         }
 
         span {
@@ -112,27 +136,6 @@
 
         @include responsive($lg) {
           margin-bottom: 20px;
-        }
-      }
-    }
-    .downButton {
-      position: absolute;
-      bottom: 40px;
-      left: 40%;
-
-      @include responsive($lg) {
-        bottom: 10px;
-
-      }
-
-      img {
-        width: 30px;
-        animation: arrowBlink 2s infinite;
-      }
-
-      @keyframes arrowBlink {
-        100% {
-          opacity: 0;
         }
       }
     }
