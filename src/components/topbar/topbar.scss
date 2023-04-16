@@ -9,6 +9,11 @@
   top: 0;
   z-index: 3;
   transition: all 1s ease;
+  overflow: hidden;
+
+  @include responsive($xs) {
+    height: 50px;
+  }
 
   .wrapper {
     padding: 10px 30px;
@@ -26,6 +31,11 @@
         text-decoration: none;
         color: inherit;
         margin-right: 40px;
+
+        @include responsive($xs) {
+          font-size: 30px;
+          font-weight: 600;
+        }
       }
 
       .itemContainer {
@@ -33,7 +43,7 @@
         align-items: center;
         margin-left: 30px;
 
-        @include mobile {
+        @include responsive($lg) {
           display: none;
         }
 
@@ -58,6 +68,16 @@
         flex-direction: column;
         justify-content: space-between;
         cursor: pointer;
+
+        @include responsive($xs) {
+          width: 22px;
+          height: 15px;
+        }
+
+        @include responsive($sm) {
+          width: 25px;
+          height: 18px;
+        }
 
         span {
           width: 100%;
