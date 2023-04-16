@@ -22,6 +22,10 @@
       padding: 50px;
       width: 100%;
     }
+
+    @include responsive($xs) {
+      width: 90%;
+    }
     
     .imgContainer {
       display: flex;
@@ -46,8 +50,8 @@
         }
 
         @include responsive($xs) {
-          width: 250px;
-          height: 250px;
+          width: 220px;
+          height: 220px;
         }
       }
     }
@@ -136,6 +140,11 @@
 
         @include responsive($lg) {
           margin-bottom: 20px;
+        }
+
+        @include responsive($xs) {
+          font-size: xx-small;
+          width: 100px;
         }
       }
     }
