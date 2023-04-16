@@ -5,7 +5,7 @@
   display: flex;
   padding: 20px;
 
-  @include mobile{
+  @include responsive($lg){
     flex-direction: column;
     align-items: center;
     padding: 0px;
@@ -17,22 +17,38 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include responsive($lg) {
+      padding: 50px;
+      width: 100%;
+    }
     
     .imgContainer {
-      background-color: $mainColor;
-      border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
+      height: auto;
 
-      @include mobile{
-        height: 100%;
-        width: 100%;
+      @include responsive($lg){
         overflow: hidden;
       }
 
       img {
-        height: 100%;
+        width: 480px;
+        height: 480px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+
+        @include responsive($lg) {
+          width: 290px;
+          height: 290px;
+        }
+
+        @include responsive($xs) {
+          width: 250px;
+          height: 250px;
+        }
       }
     }
   }
@@ -43,16 +59,20 @@
     align-items: center;
     padding-left: 20px;
 
-    @include mobile {
-      padding-left: 0px;
+    @include responsive($lg) {
+      padding: 20px;
+      width: 100%;
+      height: auto;
+      align-items: center;
+      justify-content: center;
     }
 
     .wrapper {
       display: flex;
       flex-direction: column;
 
-      @include mobile{
-        padding-left: 0;
+      @include responsive($lg){
+        padding: 20px;
         align-items: center;
       }
 
@@ -60,18 +80,32 @@
         font-size: 60px;
         margin: 10px 0;
 
-        @include mobile{
+        @include responsive($lg){
           font-size: 40px;
         }
+
+        @include responsive($xs){
+          font-size: 25px;
+        }
       }
+
       h2 {
         font-size: 35px;
+
+        @include responsive($xs){
+          font-size: 20px;
+        }
       }
+
       h3 {
         font-size: 30px;
 
-        @include mobile{
+        @include responsive($lg){
           font-size: 20px;
+        }
+
+        @include responsive($xs){
+          font-size: 15px;
         }
 
         span {
@@ -93,31 +127,15 @@
         }
       }
       
-      button {
+      .downloadButton {
         margin-top: 20px;
         width: 120px;
         background-color: $mainColor;
         color: white;
         cursor: pointer;
 
-        @include mobile {
+        @include responsive($lg) {
           margin-bottom: 20px;
-        }
-      }
-    }
-    a {
-      position: absolute;
-      bottom: 10px;
-      left: 40%;
-
-      img {
-        width: 30px;
-        animation: arrowBlink 2s infinite;
-      }
-
-      @keyframes arrowBlink {
-        100% {
-          opacity: 0;
         }
       }
     }

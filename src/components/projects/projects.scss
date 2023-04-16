@@ -13,7 +13,7 @@
     font-size: 60px;
     color: white;
     
-    @include mobile {
+    @include responsive($lg) {
       font-size: 40px;
       top: 30px;
     }
@@ -24,7 +24,7 @@
     position: absolute;
     cursor: pointer;
 
-    @include mobile {
+    @include responsive($lg) {
       display: none;
     }
 
@@ -46,7 +46,7 @@
     transition: all 1s ease-out;
     top: 120px;
     
-    @include mobile {
+    @include responsive($lg) {
       height: auto;
       flex-direction: column;
       justify-content: center;
@@ -58,7 +58,7 @@
       align-items: center;
       justify-content: center;
 
-      @include mobile {
+      @include responsive($lg) {
         overflow: hidden;
         display: flex;
         align-items: center;
@@ -75,7 +75,7 @@
         align-items: center;
         justify-content: center;
 
-        @include mobile {
+        @include responsive($lg) {
           width: 90%;
           height: 40%;
           border-radius: 6px;
@@ -94,7 +94,7 @@
           align-items: center;
           justify-content: center;
 
-          @include mobile {
+          @include responsive($lg) {
             flex: none;
             display: flex;
             align-items: center;
@@ -112,7 +112,7 @@
             flex-direction: column;
             gap: 12px;
 
-            @include mobile {
+            @include responsive($lg) {
               display: flex;
               flex-direction: column;
               overflow: hidden;
@@ -121,14 +121,14 @@
             h2 {
               font-size: 35px;
 
-              @include mobile{
+              @include responsive($lg){
                 font-size: 26px;
               }
             }
             p {
               font-size: 18px;
 
-              @include mobile{
+              @include responsive($lg){
                 font-size: 16px;
               }
             }
@@ -144,20 +144,20 @@
               margin-top: 20px;
               color: $mainColor;
 
-              @include mobile {
+              @include responsive($lg) {
                 color: $mainColor;
               }
             }
 
             span {
-              font-size: 12px;
+              font-size: 14px;
               border-top-style: solid;
               border-top-width: 1px;
               margin-top: 2px;
               padding-top: 12px;
               color: $mainColor;
 
-              @include mobile {
+              @include responsive($lg) {
                 color: $mainColor;
               }
             }
@@ -173,7 +173,7 @@
           background-size: contain;
           background-position: center;
 
-          @include mobile {
+          @include responsive($lg) {
             flex: none;
             display: flex;
             justify-content: center;

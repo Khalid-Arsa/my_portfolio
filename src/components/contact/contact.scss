@@ -4,7 +4,7 @@
   background-color: white;
   display: flex;
 
-  @include mobile {
+  @include responsive($lg) {
     flex-direction: column;
   }
 
@@ -15,7 +15,7 @@
     align-items: center;
     justify-content: center;
 
-    @include mobile {
+    @include responsive($lg) {
       flex: 0.5;
     }
 
@@ -24,7 +24,7 @@
       height: 100%;
     }
 
-    @include mobile {
+    @include responsive($lg) {
       img {
         height: 90%;
       }
@@ -35,66 +35,102 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 
-    h2 {
-      font-size: 40px;
-
-      @include mobile {
-        margin-bottom: 10px;
-        font-size: 35px;
-      }
-    }
-
-    form {
-      width: auto;
-      height: 70%;
+    .form-container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-around;
+      justify-content: center;
+      height: auto;
 
-      input {
-        width: 300px;
-        height: 30px;
-        font-size: 15px;
+      @include responsive($lg) {
+        height: auto;
+        padding: 20px;
+      }
 
-        @include mobile {
-          width: 200px;
-          height: 20px;
-          margin-bottom: 10px;
+      h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+
+        @include responsive($lg) {
+          margin-bottom: 20px;
+          font-size: 35px;
         }
       }
 
-      textarea {
-        width: 300px;
-        height: 200px;
-        font-size: 15px;
+      form {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
 
-        @include mobile {
-          width: 200px;
-          height: 100px;
+        @include responsive($lg) {
+          gap: 3px;
+        }
+
+        input {
+          width: 300px;
+          height: 30px;
+          font-size: 15px;
+
+          @include responsive($lg) {
+            width: 300px;
+            height: 20px;
+            margin-bottom: 10px;
+          }
+        }
+
+        textarea {
+          width: 300px;
+          height: 200px;
+          font-size: 15px;
+          resize: vertical;
+
+          @include responsive($lg) {
+            width: 300px;
+            height: 100px;
+          }
+        }
+
+        button {
+          width: 150px;
+          height: 30px;
+          color: white;
+          background-color: $mainColor;
+          border: none;
+          border-radius: 10px;
+          margin-top: 10px;
+          cursor: pointer;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        span {
+          color: $mainColor;
+          margin-top: 10px;
         }
       }
+    }
 
-      button {
-        width: 150px;
-        height: 30px;
-        color: white;
-        background-color: $mainColor;
-        border: none;
-        border-radius: 10px;
-        font-weight: 500;
-        cursor: pointer;
+    .icon-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      gap: 10px;
 
-        &:focus {
-          outline: none;
+      .icon {
+        font-size: 30px;
+        color: black;
+
+        @include responsive($lg) {
+          font-size: 28px;
         }
-      }
-
-      span {
-        color: green;
       }
     }
   }
