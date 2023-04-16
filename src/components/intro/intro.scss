@@ -17,22 +17,33 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include mobile {
+      padding: 40px;
+      width: 100%;
+    }
     
     .imgContainer {
-      background-color: $mainColor;
-      border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
+      height: auto;
 
       @include mobile{
-        height: 100%;
-        width: 100%;
         overflow: hidden;
       }
 
       img {
-        height: 100%;
+        width: 480px;
+        height: 480px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+
+        @include mobile {
+          width: 290px;
+          height: 290px;
+        }
       }
     }
   }
