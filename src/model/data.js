@@ -1,7 +1,7 @@
 import CAPLAN_IMG from "../asset/img/caplan_plan.png"
 import FITAZFK_IMG from "../asset/img/fitazfk_admin.png"
 import GIVENGET_IMG from "../asset/img/givenget_admin.png"
-import FITAZFK_MOBILE_IMG from "../asset/img/fitazfk_mobile.jpg"
+import FITAZFK_MOBILE_IMG from "../asset/img/fitaz_mobile.png"
 
 export const data = [
   {
@@ -11,24 +11,26 @@ export const data = [
     desc:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
     img: CAPLAN_IMG,
-    stack: ["ReactJs | ", "ExpressJs | ", "Mysql | ", "EC2/AWS"],
-    link: [{
+    stack: ["Laravel | ", "ReactJs | ", "Mysql | ", "EC2/AWS"],
+    link: {
       github: null,
       site: null
-    }]
+    },
+    hashtag: 'dashboard'
   },
   {
     id: 2,
     icon: "./assets/globe.png",
-    title: "Fitazfk Admin",
+    title: "FitazFk Admin",
     desc:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
     img: FITAZFK_IMG,
-    stack: ["ReactJs | ", "Firebase | ", "GCE/GCP"],
-    link: [{
+    stack: ["AngularJs | ", "Firebase | ", "GCE/GCP"],
+    link: {
       github: null,
       site: null
-    }]
+    },
+    hashtag: 'dashboard'
   },
   {
     id: 3,
@@ -37,24 +39,26 @@ export const data = [
     desc:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
     img: GIVENGET_IMG,
-    stack: ["NestJs | ", "Mysql | ", "EC2/AWS"],
-    link: [{
+    stack: ["Laravel | ", "ReactJs | ", "Mysql | ", "EC2/AWS"],
+    link: {
       github: null,
       site: null
-    }]
+    },
+    hashtag: 'dashboard'
   },
   {
     id: 4,
     icon: "./assets/writing.png",
-    title: "Give and Get",
+    title: "FitazFk Fitness App",
     desc:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     img: FITAZFK_MOBILE_IMG,
-    stack: ["NestJs | ", "Mysql | ", "EC2/AWS"],
-    link: [{
+    stack: ["React-Native | ", "Firebase | ", "GCE/GCP"],
+    link: {
       github: null,
       site: null
-    }]
+    },
+    hashtag: 'MobileApp'
   },
 ];
 

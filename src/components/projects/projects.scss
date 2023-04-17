@@ -17,6 +17,10 @@
       font-size: 40px;
       top: 30px;
     }
+
+    @include responsive($xs) {
+      font-size: 30px;
+    }
   }
 
   .arrow {
@@ -117,6 +121,22 @@
               flex-direction: column;
               overflow: hidden;
             }
+
+            .hashtag {
+              font-size: 13px;
+              border-top-style: none;
+              margin-top: 0px;
+              padding-top: 0px;
+              color: $mainColor;
+
+              @include responsive($lg) {
+                color: $mainColor;
+              }
+
+              @include responsive($xs) {
+                font-size: 10px;
+              }
+            }
             
             h2 {
               font-size: 35px;
@@ -124,12 +144,21 @@
               @include responsive($lg){
                 font-size: 26px;
               }
+
+              @include responsive($xs){
+                font-size: 20px;
+              }
             }
+
             p {
               font-size: 18px;
 
               @include responsive($lg){
                 font-size: 16px;
+              }
+
+              @include responsive($xs){
+                font-size: 13px;
               }
             }
 
@@ -147,6 +176,10 @@
               @include responsive($lg) {
                 color: $mainColor;
               }
+
+              @include responsive($xs) {
+                font-size: 17px;
+              }
             }
 
             span {
@@ -159,6 +192,10 @@
 
               @include responsive($lg) {
                 color: $mainColor;
+              }
+
+              @include responsive($xs) {
+                font-size: 11px;
               }
             }
           }
