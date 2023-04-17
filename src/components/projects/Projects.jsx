@@ -27,13 +27,14 @@ export default function Works() {
               </div>
               <div className='left'>
                 <div className='leftContainer'>
-                  <h2>{d.title}</h2>
-                  <p>
-                    {d.desc}
-                  </p>
+                  <div>
+                    <span className='hashtag'>#{d.hashtag}</span>
+                    <h2>{d.title}</h2>
+                  </div>
+                  <p>{d.desc}</p>
                   <div className='link'>
-                    <h2 className='projectButton'>Demo</h2>
-                    <h2 className='projectButton'>Github</h2>
+                    {d.link.site && (<h2 className='projectButton'>Demo</h2>)}
+                    {d.link.github && (<h2 className='projectButton'>Github</h2>)}
                   </div>
                   <span>{d.stack}</span>
                 </div>
