@@ -33,7 +33,7 @@ export default function Works() {
                   </div>
                   <p>{d.desc}</p>
                   <div className='link'>
-                    {d.link.site && (<h2 className='projectButton'>Demo</h2>)}
+                    {d.link.site && (<h2 className='projectButton'>View</h2>)}
                     {d.link.github && (<h2 className='projectButton'>Github</h2>)}
                   </div>
                   <span>{d.stack}</span>

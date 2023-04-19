@@ -1,77 +1,73 @@
-import CAPLAN_IMG from "../asset/img/caplan_plan.png"
+import CAPLAN_IMG from "../asset/img/caplan_planner.png"
 import FITAZFK_IMG from "../asset/img/fitazfk_admin.png"
-import GIVENGET_IMG from "../asset/img/givenget_admin.png"
+import GIVENGET_IMG from "../asset/img/givenget_dashboard.png"
 import FITAZFK_MOBILE_IMG from "../asset/img/fitaz_mobile.png"
+import GIVENGET_MOBILE_IMG from "../asset/img/give+get_mobile.png"
 
 export const data = [
   {
     id: "1",
-    icon: "./assets/mobile.png",
     title: "Caplan Planner",
     desc:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+      "Caplan's payroll budget includes all costs directly related to individual employees, including wages, commissions, and taxes. The content of this project is confidential and it is strictly forbidden to share the repo and the project",
     img: CAPLAN_IMG,
-    stack: ["Laravel | ", "ReactJs | ", "Mysql | ", "EC2/AWS"],
+    stack: ["Laravel | ", "ReactJs | ", "Tailwind | ", "Mysql | ", "EC2/AWS"],
     link: {
       github: null,
       site: null
     },
-    hashtag: 'dashboard'
+    hashtag: 'Planner'
   },
   {
     id: 2,
-    icon: "./assets/globe.png",
     title: "FitazFk Admin",
     desc:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+      "Customize the exercises and nutrition plans. The content of this project is confidential and it is strictly forbidden to share the repo the project",
     img: FITAZFK_IMG,
     stack: ["AngularJs | ", "Firebase | ", "GCE/GCP"],
     link: {
       github: null,
       site: null
     },
-    hashtag: 'dashboard'
+    hashtag: 'Dashboard'
   },
   {
     id: 3,
-    icon: "./assets/writing.png",
-    title: "Give and Get Admin",
+    title: "Give + Get Admin",
     desc:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+      "Give + Get is a admin dashboard that you can create a new charities, organizations, challenges and activities, you can also remove the item, update and view the list of all items. The content of this project is confidential and it is strictly forbidden to share the repo the project",
     img: GIVENGET_IMG,
-    stack: ["Laravel | ", "ReactJs | ", "Mysql | ", "EC2/AWS"],
+    stack: ["Laravel | ", "ReactJs | ", "MaterialUI | ", "Mysql | ", "EC2/AWS"],
     link: {
       github: null,
       site: null
     },
-    hashtag: 'dashboard'
+    hashtag: 'Dashboard'
   },
   {
     id: 4,
-    icon: "./assets/writing.png",
     title: "FitazFk Fitness App",
     desc:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Daily workouts, customised nutrition plans, all in one convenient app. You can install this app in App Store or Play Store. The content of this project is confidential and it is strictly forbidden to share the repo",
     img: FITAZFK_MOBILE_IMG,
     stack: ["React-Native | ", "Firebase | ", "GCE/GCP"],
     link: {
       github: null,
       site: null
     },
-    hashtag: 'MobileApp'
-  },
-];
-
-export const mobilePortfolio = [
-  {
-    id: 1,
-    title: "Fitazfk App",
-    img: FITAZFK_MOBILE_IMG,
+    hashtag: 'FitnessApp'
   },
   {
-    id: 2,
+    id: 5,
     title: "Give and Get App",
-    img:
-      "https://cdn.dribbble.com/users/2597268/screenshots/15468893/media/44313553d73ba41580f1df69749bba28.jpg?compress=1&resize=1200x900",
+    desc:
+      "Give + Get is all about tapping into that innate human desire to help others; “Give”, while at the same time joining a community of active people who complete amazing challenges and reap the rewards they offer; “Get”. You can install this app in App Store only. The content of this project is confidential and it is strictly forbidden to share the repo",
+    img: GIVENGET_MOBILE_IMG,
+    stack: ["React-Native | ", "MaterialUI | ", "Mysql | ", "AWS"],
+    link: {
+      github: null,
+      site: null
+    },
+    hashtag: 'CharityApp'
   },
 ];
