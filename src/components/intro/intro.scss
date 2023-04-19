@@ -90,12 +90,16 @@
         }
 
         @include responsive($xs){
-          font-size: 25px;
+          font-size: 30px;
         }
       }
 
       h2 {
         font-size: 35px;
+
+        @include responsive($lg){
+          font-size: 28px;
+        }
 
         @include responsive($xs){
           font-size: 20px;
@@ -110,12 +114,16 @@
         }
 
         @include responsive($xs){
-          font-size: 15px;
+          font-size: 17px;
         }
 
         span {
           font-size: inherit;
           color: $mainColor;
+
+          @include responsive($xs) {
+            font-size: 17px;
+          }
         }
 
         .ityped-cursor {
