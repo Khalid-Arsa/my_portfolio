@@ -4,6 +4,7 @@ import emailjs from "emailjs-com";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import ShakeIcon from '../../asset/icon/shake.svg'
 
 export default function Contact() {
   const formRef = useRef()
@@ -33,7 +34,7 @@ export default function Contact() {
   return (
     <div className="contact" id="contact">
       <div className="left">
-        <img src="assets/shake.svg" alt="" />
+        <img src={ShakeIcon} alt="" />
       </div>
       <div className="right">
         <div className="form-container">

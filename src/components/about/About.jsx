@@ -1,5 +1,6 @@
 import React from 'react'
 import './about.scss'
+import MY_PIC from '../../asset/img/my_pic.png'
 
 export default function About() {
   return (
@@ -8,7 +9,7 @@ export default function About() {
         <div className='card'>
           <div className='card-img'>
             <img
-              src="assets/my_pic.png"
+              src={MY_PIC}
               alt="" />
           </div>
         </div>

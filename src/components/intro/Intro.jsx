@@ -3,6 +3,7 @@ import './intro.scss'
 import { init } from 'ityped'
 import Button from '@mui/material/Button';
 import RESUME from "../../file/RESUME-2021.pdf"
+import PROFILE_PIC from '../../asset/img/khalid1.png'
 
 export default function Intro() {
   const textRef = useRef();
@@ -20,7 +21,7 @@ export default function Intro() {
     <div className='intro' id='intro'>
       <div className='left'>
         <div className='imgContainer'>
-          <img src='assets/khalid1.png' alt='' />
+          <img src={PROFILE_PIC} />
         </div>
       </div>
       <div className='right'>
