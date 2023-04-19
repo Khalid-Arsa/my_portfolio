@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './projects.scss'
 import { data } from '../../model/data'
+import ARROW from '../../asset/img/arrow.png'
 
 export default function Works() {
 
@@ -27,13 +28,14 @@ export default function Works() {
               </div>
               <div className='left'>
                 <div className='leftContainer'>
-                  <h2>{d.title}</h2>
-                  <p>
-                    {d.desc}
-                  </p>
+                  <div>
+                    <span className='hashtag'>#{d.hashtag}</span>
+                    <h2>{d.title}</h2>
+                  </div>
+                  <p>{d.desc}</p>
                   <div className='link'>
-                    <h2 className='projectButton'>Demo</h2>
-                    <h2 className='projectButton'>Github</h2>
+                    {d.link.site && (<h2 className='projectButton'>View</h2>)}
+                    {d.link.github && (<h2 className='projectButton'>Github</h2>)}
                   </div>
                   <span>{d.stack}</span>
                 </div>
@@ -42,8 +44,8 @@ export default function Works() {
           </div>
         ))}
       </div>
-      <img src='assets/arrow.png' className='arrow left' alt='' onClick={() => handleClick('left')} />
-      <img src='assets/arrow.png' className='arrow right' alt='' onClick={() => handleClick('right')} />
+      <img src={ARROW} className='arrow left' alt='' onClick={() => handleClick('left')} />
+      <img src={ARROW} className='arrow right' alt='' onClick={() => handleClick('right')} />
     </div>
   )
 }

@@ -45,7 +45,6 @@
       height: auto;
 
       @include responsive($lg) {
-        height: auto;
         padding: 20px;
       }
 
@@ -56,6 +55,10 @@
         @include responsive($lg) {
           margin-bottom: 20px;
           font-size: 35px;
+        }
+
+        @include responsive($xs) {
+          font-size: 30px;
         }
       }
 
@@ -81,6 +84,10 @@
             height: 20px;
             margin-bottom: 10px;
           }
+
+          @include responsive($xs) {
+            width: auto;
+          }
         }
 
         textarea {
@@ -92,6 +99,10 @@
           @include responsive($lg) {
             width: 300px;
             height: 100px;
+          }
+
+          @include responsive($xs) {
+            width: auto;
           }
         }
 
@@ -130,6 +141,10 @@
 
         @include responsive($lg) {
           font-size: 28px;
+        }
+
+        @include responsive($xs) {
+          font-size: 24px;
         }
       }
     }
