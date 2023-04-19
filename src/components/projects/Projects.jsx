@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './projects.scss'
 import { data } from '../../model/data'
+import ARROW from '../../asset/img/arrow.png'
 
 export default function Works() {
 
@@ -43,8 +44,8 @@ export default function Works() {
           </div>
         ))}
       </div>
-      <img src='assets/arrow.png' className='arrow left' alt='' onClick={() => handleClick('left')} />
-      <img src='assets/arrow.png' className='arrow right' alt='' onClick={() => handleClick('right')} />
+      <img src={ARROW} className='arrow left' alt='' onClick={() => handleClick('left')} />
+      <img src={ARROW} className='arrow right' alt='' onClick={() => handleClick('right')} />
     </div>
   )
 }
