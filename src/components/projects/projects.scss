@@ -18,6 +18,12 @@
       top: 30px;
     }
 
+    @include responsive($med) {
+      font-size: 35px;
+      font-weight: 500;
+    }
+
+
     @include responsive($xs) {
       font-size: 30px;
     }
@@ -122,6 +128,10 @@
               overflow: hidden;
             }
 
+            .titleContainer {
+              margin-bottom: 6px;
+            }
+
             .hashtag {
               font-size: 13px;
               border-top-style: none;
@@ -130,7 +140,7 @@
               color: $mainColor;
 
               @include responsive($lg) {
-                color: $mainColor;
+                font-size: 11px;
               }
 
               @include responsive($xs) {
@@ -142,7 +152,7 @@
               font-size: 35px;
 
               @include responsive($lg){
-                font-size: 26px;
+                font-size: 24px;
               }
 
               @include responsive($xs){
@@ -154,7 +164,7 @@
               font-size: 18px;
 
               @include responsive($lg){
-                font-size: 16px;
+                font-size: 14px;
               }
 
               @include responsive($xs){
@@ -174,7 +184,7 @@
               color: $mainColor;
 
               @include responsive($lg) {
-                color: $mainColor;
+                font-size: 18px;
               }
 
               @include responsive($xs) {
@@ -191,7 +201,7 @@
               color: $mainColor;
 
               @include responsive($lg) {
-                color: $mainColor;
+                font-size: 12px;
               }
 
               @include responsive($xs) {

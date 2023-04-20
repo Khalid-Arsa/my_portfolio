@@ -11,6 +11,10 @@
   transition: all 1s ease;
   overflow: hidden;
 
+  @include responsive($lg) {
+    height: 50px;
+  }
+
   @include responsive($xs) {
     height: 50px;
   }
@@ -31,6 +35,11 @@
         text-decoration: none;
         color: inherit;
         margin-right: 40px;
+
+        @include responsive($lg) {
+          font-size: 30px;
+          font-weight: 500;
+        }
 
         @include responsive($xs) {
           font-size: 30px;
@@ -69,14 +78,10 @@
         justify-content: space-between;
         cursor: pointer;
 
-        @include responsive($xs) {
-          width: 22px;
-          height: 15px;
-        }
-
-        @include responsive($sm) {
-          width: 25px;
-          height: 18px;
+        @include responsive($lg) {
+          width: 19px;
+          height: 13px;
+          overflow: hidden;
         }
 
         span {

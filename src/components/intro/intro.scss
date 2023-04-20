@@ -86,7 +86,8 @@
         margin: 10px 0;
 
         @include responsive($lg){
-          font-size: 40px;
+          font-size: 33px;
+          font-weight: 500;
         }
 
         @include responsive($xs){
@@ -98,11 +99,8 @@
         font-size: 35px;
 
         @include responsive($lg){
-          font-size: 28px;
-        }
-
-        @include responsive($xs){
           font-size: 20px;
+          font-weight: 500;
         }
       }
 
@@ -110,11 +108,8 @@
         font-size: 30px;
 
         @include responsive($lg){
-          font-size: 20px;
-        }
-
-        @include responsive($xs){
           font-size: 17px;
+          font-weight: 500;
         }
 
         span {
@@ -148,10 +143,6 @@
         cursor: pointer;
 
         @include responsive($lg) {
-          margin-bottom: 20px;
-        }
-
-        @include responsive($xs) {
           font-size: xx-small;
           width: 100px;
         }

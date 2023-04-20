@@ -28,7 +28,7 @@ export default function Works() {
               </div>
               <div className='left'>
                 <div className='leftContainer'>
-                  <div>
+                  <div className='titleContainer'>
                     <span className='hashtag'>#{d.hashtag}</span>
                     <h2>{d.title}</h2>
                   </div>
