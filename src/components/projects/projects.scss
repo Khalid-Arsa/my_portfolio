@@ -9,7 +9,7 @@
 
   h1 {
     position: absolute;
-    top: 20px;
+    top: 30px;
     font-size: 60px;
     color: white;
     
@@ -49,12 +49,15 @@
   }
 
   .slider {
-    height: 450px;
+    height: auto;
     display: flex;
     position: absolute;
     left: 0;
     transition: all 1s ease-out;
-    top: 120px;
+
+    @include responsive($lg) {
+      top: 120px;
+    }
     
     @include responsive($lg) {
       height: auto;
